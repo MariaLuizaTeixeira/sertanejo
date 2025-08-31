@@ -1,0 +1,389 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site {
+
+    display: flex;
+    flex-direction: column;
+    font-family: "Rye", serif;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.mt-5 {
+    margin-top: 80px;
+}
+
+header {
+    position: relative;
+    height: auto;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0 -150px;
+}
+
+header .imagem{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.redes {
+    justify-content: right;
+    margin-left: 20px;
+}
+
+.redes ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.redes i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.redes .bi-instagram:hover {
+    background-image: linear-gradient(to bottom, #390099, #9e0059, #ff0054, #ff5400, #ffbd00);
+    font-size: 25px;
+}
+
+.redes .bi-facebook:hover {
+    color: blue;
+    font-size: 25px;
+}
+
+.redes .bi-youtube:hover {
+    color: red;
+    font-size: 25px;
+}
+
+.menu {
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: right;
+}
+
+.menu a {
+    color: #F3E9DC;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    color: #C75D2C;
+    font-size: larger;
+}
+
+.menu i {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    color: #fff;
+
+    background-color: #9b9b9b;
+    padding: 5px;
+    border-radius: 50%;
+
+    transition: all 0.3s ease;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+header h1 {
+    margin-left: 50px;
+    font-size: 70px;
+    color: #C75D2C;
+}
+
+.album {
+    display: flex;
+}
+
+.frases {
+    flex-direction: column;
+}
+
+.botoes {
+    margin-left: 100px;
+    flex-direction: column;
+
+}
+
+.botao {
+    display: flex;
+    height: 72.5px;
+    width: 700px;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.botao img {
+    height: 55px;
+    width: 55px;
+}
+
+.botao p {
+    margin-top: 20px;
+    margin-left: 10px;
+    x: 630px;
+}
+
+.apple img {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    margin-top: 8px;
+    font-size: medium;
+    font-weight: bold;
+    border-color: #C75D2C;
+    background-color: #D96F32;
+    transition: all 0.5s ease;
+    position: absolute;
+    margin-left: 570px;
+}
+
+button:hover {
+    background-color: #F8B259;
+    color: white;
+    width: 110px;
+    height: 55px;
+}
+
+.rodape {
+    position: relative;
+    background-image: linear-gradient(to bottom, #F8B259, #D96F32);
+    margin-left: -150px;
+    margin-right: -150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape h2 {
+    margin-top: 30px;
+}
+
+.rodape p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: small;
+    text-align: center;
+}
+
+.video {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.proximo {
+    color: #C75D2C;
+    margin-top: 500px;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+main h1 {
+    margin-bottom: 5px;
+    font-size: 60px;
+    color: #C75D2C;
+}
+
+main h3 {
+    margin-bottom: 5px;
+    color: #D96F32;
+}
+
+.agenda {
+    margin-top: -200px;
+}
+
+.agenda ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.agenda li {
+    height: 175px;
+    width: 390px;
+    background-color: #F8B259;
+    border-radius: 25px;
+}
+
+.show {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.show p {
+    color: #C75D2C;
+}
+
+.data-show p {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #F3E9DC;
+
+}
+
+.local-show p {
+    font-size: 25px;
+    margin-top: 20px;
+    color: #F3E9DC;
+}
+
+.linha {
+    width: 155px;
+    background-color: #ffbd00;
+    color: #ffbd00;
+    height: 10px;
+    font-size: 10px;
+}
+/*
+.header-fotos {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: "Rye", serif;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.fotos ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.fotos li img {
+    height: 300px;
+    width: 300px;
+}
+
+.lemonade {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 100px;
+} 
+*/
+.album-colecao img{
+    height: 200px;
+    width: 200px;
+}
+
+.albuns {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.letras {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -500px;
+}
+
+.letras-musicas {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.letras-musicas a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+    text-decoration: none;
+    color: #FFBF78;
+    transition: all 0.5s ease;
+}
+
+.letras-musicas a:hover{
+    color:#FFEEA9
+}
+
+.musica-informacoes {
+    display: flex;
+    margin-top: -500px;
+    justify-content: space-evenly;
+}
+
+.musica {
+    margin-left: 15px;
+}
+
+.letra-musica {
+    flex-direction: column;
+}
+
+.estrofe {
+    margin-bottom: 10px;
+}
+
+.frase {
+    margin-bottom: 2px;
+}
