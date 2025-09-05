@@ -416,3 +416,8 @@ button .musica.botao {
     height: 400px;
     width: 400px;
 }
+
+.nome-album {
+    display: flex;
+    justify-content: center;
+}
